@@ -2,7 +2,7 @@
 ## Overview
 Repository for the application of Deep-XCCA. Messenger RNA (mRNA)-based vaccines have been demonstrated as a promising technology for preventing viral infections due to their safety, rapid production, high potency, and ease of industrialization. There are still some challenges faced by mRNA vaccine design, one of which is how to optimize the coding sequence (CDS) of mRNA to improve its translation efficiency. Here, we proposed a cross-covariance codon attention (XCCA) mechanism to represent codon selection probabilities for each amino acid of the inputted protein, and then based on XCCA we developed a deep learning method called Deep-XCCA for CDS optimization, which was specifically designed to learn the long-term dependencies both in the amino acid and the codon sequences.  
 
-<img width="2244" height="1700" alt="Figure3 1The model diagram of DeepXCLA" src="https://github.com/user-attachments/assets/6fdab63e-31ab-430a-a736-bc45952e4f5a" />
+![Figure](Figure1.jpg)
 
 ## Functions
 _test.py_ codes for predict.  
