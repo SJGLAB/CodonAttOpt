@@ -98,6 +98,7 @@ class WordRep(nn.Module):
             word_list.append(self.feature_embeddings[idx](feature_inputs[idx]))
         # label embedding
         label_embs = self.label_embedding(input_label_seq_tensor)
+        
         word_embs = torch.cat(word_list, 2)
         word_represent = self.drop(word_embs)
         return word_embs, label_embs

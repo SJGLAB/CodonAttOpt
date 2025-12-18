@@ -39,7 +39,7 @@ class SeqModel(nn.Module):
         batch_size = word_inputs.size(0)
         seq_len = word_inputs.size(1)
 
-        loss_function = nn.NLLLoss(ignore_index=0, size_average=False)
+        loss_function = nn.NLLLoss(reduction='sum')
         outs = outs.view(batch_size * seq_len, -1)
         score = F.log_softmax(outs, 1)
         total_loss = loss_function(score, batch_label.view(batch_size * seq_len))
@@ -57,6 +57,7 @@ class SeqModel(nn.Module):
 
         outs = outs.view(batch_size * seq_len, -1)
         _, tag_seq  = torch.max(outs, 1)
+    
         tag_seq = tag_seq.view(batch_size, seq_len)
         tag_seq = mask.long() * tag_seq
 
