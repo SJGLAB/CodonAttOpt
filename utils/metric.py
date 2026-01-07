@@ -1,3 +1,8 @@
+# -*- coding: utf-8 -*-
+# @Author: Jie
+# @Date:   2017-06-14 17:34:32
+# @Last Modified by:   Jie Yang,     Contact: jieynlp@gmail.com
+# @Last Modified time: 2018-06-22 00:01:47
 from __future__ import print_function
 import sys
 
@@ -222,4 +227,5 @@ if __name__ == '__main__':
         fmeasure_from_singlefile(sys.argv[1],"BMES",int(sys.argv[2]))
     else:
         fmeasure_from_singlefile(sys.argv[1],"BMES")
+
 
