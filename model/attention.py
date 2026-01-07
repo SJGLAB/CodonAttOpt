@@ -1,7 +1,7 @@
 # !/usr/bin/env python3 
 # -*- coding: utf-8 -*-
 """
-Copyright 2025 Baidu Inc. All Rights Reserved.
+Copyright 2025 Beijing University of Technology Inc. All Rights Reserved.
 2024/3/6, by SJGLAB@163.com, create
 
 """
