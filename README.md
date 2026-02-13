@@ -1,6 +1,6 @@
-# CodonAttention
+# CodonAttOpt
 ## Overview
-Repository for the application of CodonAttention. Messenger RNA (mRNA)-based vaccines have been demonstrated as a promising technology for preventing viral infections due to their safety, rapid production, high potency, and ease of industrialization. There are still some challenges faced by mRNA vaccine design, one of which is how to optimize the coding sequence (CDS) of mRNA to improve its translation efficiency. Here, we proposed a codon attention mechanism to represent codon selection probabilities for each amino acid of the inputted protein, and then based on attention mechanism we developed a deep learning method called CodonAttention for CDS optimization, which was specifically designed to learn the long-term dependencies both in the amino acid and the codon sequences.   
+Repository for the application of CodonAttOpt. Messenger RNA (mRNA)-based vaccines have been demonstrated as a promising technology for preventing viral infections due to their safety, rapid production, high potency, and ease of industrialization. There are still some challenges faced by mRNA vaccine design, one of which is how to optimize the coding sequence (CDS) of mRNA to improve its translation efficiency. Here, we proposed a codon attention mechanism to represent codon selection probabilities for each amino acid of the inputted protein, and then based on attention mechanism we developed a deep learning method called CodonAttOpt for CDS optimization, which was specifically designed to learn the long-term dependencies both in the amino acid and the codon sequences.   
 
 ![Figure](Figure1.png)
 
@@ -8,7 +8,7 @@ Repository for the application of CodonAttention. Messenger RNA (mRNA)-based vac
 ```bash
 test.py_ codes for predict.  
 model/attention.py_ codes for attention.  
-model/wordsequence.py_ codes for CodonAttention model.  
+model/wordsequence.py_ codes for CodonAttOpt model.  
 utils/data.py_ codes for input embedding vectors and 64-possible codons as embedding vectors.  
 utils/metric.py_ codes for evaluation metric.
 ```
@@ -35,13 +35,13 @@ Python 3.X
 ## Installation_Guide
 ### Download the codes
 ```bash
-git clone https://github.com/SJGLAB/CodonAttention.git
+git clone https://github.com/SJGLAB/CodonAttOpt.git
 ```
 ### Prepare the environment
 We recommend you to use Anaconda to prepare the environments.
 ```bash
-conda create -n CodonAttention python=3.10  
-conda activate CodonAttention  
+conda create -n CodonAttOpt python=3.10  
+conda activate CodonAttOpt  
 pip install torch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0 --index-url https://download.pytorch.org/whl/cu121    
 pip install Bio
 ```
@@ -56,5 +56,5 @@ python test.py --status dev --batch_size 8 --hidden_dim 3000 --word_emb_dim 3000
 We build our model based on the architecture [code](https://github.com/Devil625/Codon_Optimization)
 
 ## Contact Us
-If you have questions about using CodonAttention, please contact us.
+If you have questions about using CodonAttOpt, please contact us.
 
